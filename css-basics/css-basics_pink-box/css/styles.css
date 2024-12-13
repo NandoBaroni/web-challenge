@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+/* Styling div elements */
+div {
+  font-family: cursive; /* Changes the font to cursive */
+  padding: 8px; /* Adds spacing inside the box */
+  height: 150px; /* Sets the height of the box */
+  width: 150px; /* Sets the width of the box */
+  background-color: hotpink; /* Makes the background color hot pink */
+  color: white; /* Changes the text color to white */
+  border-radius: 8px; /* Gives the box rounded edges */
+  display: flex; /* Allows content alignment inside the box */
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+}

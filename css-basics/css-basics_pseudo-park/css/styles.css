@@ -1,0 +1,47 @@
+/* General styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.park {
+  margin: 16px;
+  border: 2px dashed silver;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animal {
+  padding: 16px;
+  font-size: 32px;
+}
+
+.crocodile {
+  text-align: left;
+}
+
+.giraffe {
+  text-align: center;
+}
+
+.dino {
+  text-align: right;
+}
+
+/* Hover effects */
+.crocodile:hover {
+  background-color: lightblue;
+}
+
+.giraffe:hover {
+  background-color: lightgreen;
+}
+
+.dino:hover {
+  background-color: lightsalmon;
+}
