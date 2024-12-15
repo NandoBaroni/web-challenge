@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #dbdbdb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+header {
+  background-color: hsl(288, 39%, 49%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+section.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between categories */
+  width: 100%;
+}
+
+h2 {
+  color: hsl(288, 39%, 49%);
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-box h3 {
+  color: hsl(288, 39%, 49%);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button Styles */
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: hsl(288, 39%, 49%);
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+a.button:hover {
+  background-color: #4ed400; /* Bright yellow for strong contrast */
+  color: #333; /* Dark text for readability */
+}
+
+/* Footer Styles */
+footer {
+  margin: 40px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.footer-box h3 {
+  color: hsl(288, 39%, 49%);
+  margin-bottom: 10px;
+}
+
+.footer-box p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
