@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <!-- Name -->
+      <label for="full-name">Full Name:</label>
+      <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <!-- Favourite Color -->
+      <label for="fav-color">Favourite Color:</label>
+      <input type="color" id="fav-color" name="fav-color" value="#E5430F" />
+
+      <!-- Pets -->
+      <label for="fav-pet">Favourite Pets:</label>
+      <select id="fav-pet" name="fav-pet">
+        <option value="agra-cadabra">Agra Cadabra</option>
+        <option value="chicken-turtle">Chicken Turtle</option>
+        <option value="fried-egg-jellyfish">Fried Egg Jellyfish</option>
+      </select>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
