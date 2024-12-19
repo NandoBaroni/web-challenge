@@ -1,0 +1,15 @@
+const form = document.querySelector('[data-js="form"]');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = {};
+    new FormData(form).forEach((value, key) => {
+        formData[key] = value;
+    });
+
+    console.log(formData);
+
+    form.reset();
+    form.querySelector('[name="firstName"]').focus();
+});

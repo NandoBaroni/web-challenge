@@ -6,100 +6,75 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>HTML Forms</title>
+    <title>JS Forms: Checkbox Input</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
     <main>
       <h1>Service</h1>
-      <h2>Customer Complaint Form</h2>
+      <h2>Customer complaint form</h2>
       <p>
-        Fill out this form to complain to customer support about our poor stupid
+        Fill out this form to complain to customer support about our poor
         service. Please note that due to an increased volume of requests, it
-        currently takes us several decades to respond to your request.
+        currently takes us several months to respond to your request.
       </p>
       <p>
         <strong>Note:</strong> This form is not intended to be used for any
-        other purpose than to complain to customer support, nobody cares!
+        other purpose than to complain to customer support.
       </p>
-      <form data-js="form" id="complaint-form">
+      <form data-js="form">
         <fieldset>
           <legend>Personal Information</legend>
-
-          <!-- First Name -->
           <label for="first-name">First Name</label>
           <input
             type="text"
             name="firstName"
             id="first-name"
             placeholder="Your first name"
-            required
-            minlength="4"
           />
 
-          <!-- Last Name -->
           <label for="last-name">Last Name</label>
           <input
             type="text"
             name="lastName"
             id="last-name"
             placeholder="Your last name"
-            required
-            minlength="4"
-            maxlength="30"
           />
 
-          <!-- Age -->
           <label for="age">Age</label>
-          <input
-            type="number"
-            name="age"
-            id="age"
-            required
-            min="14"
-            placeholder="Your age"
-          />
+          <input type="number" name="age" id="age" min="16" max="200" />
 
-          <!-- Email -->
           <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="Your email address"
-          />
+          <input type="email" name="email" id="email" />
         </fieldset>
 
         <fieldset>
-          <legend>Your Complaint</legend>
-
-          <!-- Complaint Type -->
-          <label for="complaint">Spill the Beans</label>
+          <legend>Your complaint</legend>
+          <label for="complaint">What went wrong?</label>
           <select name="complaint" id="complaint">
             <option value="nothing" selected>
               Nothing, everything is fine!
             </option>
             <option value="personal">It's me, not you!</option>
             <option value="broken">
-              My product is broken, can you fix it moron?
+              My product is broken, can you fix it?
             </option>
           </select>
 
-          <!-- Complaint Details -->
           <label for="details">Details about your complaint</label>
           <textarea
             name="details"
             id="details"
+            rows="10"
+            cols="50"
             placeholder="Please provide as much detail as possible"
           ></textarea>
 
-          <!-- Experience Rating -->
           <label for="badness"
             >How bad was your experience? (On a scale from <q>meh</q> to
-            <q>abysmal</q>)</label
-          >
+            <q>abysmal</q>)
+          </label>
           <input
             id="badness"
             name="badness"
@@ -109,18 +84,11 @@
             value="100"
           />
 
-          <!-- Order Date -->
           <label for="order-date">Order Date</label>
           <input type="date" name="orderDate" id="order-date" />
 
-          <!-- Terms of Service -->
-          <label for="terms-of-service">
-            <input
-              type="checkbox"
-              name="terms-of-service"
-              id="terms-of-service"
-              required
-            />
+          <label for="tos">
+            <input type="checkbox" name="tos" id="tos" />
             I have read the terms of service and agree to sell my soul
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -132,7 +100,6 @@
           </label>
         </fieldset>
 
-        <!-- Submit Button -->
         <button type="submit">Complain now!</button>
       </form>
     </main>
